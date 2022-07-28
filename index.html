@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WoW Code</title>
+    <title>WoW Code Learning</title>
     <!-- font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,13 +27,18 @@
         font-weight: 600;
         font-size: 40px;
       }
+
+      #menu {
+        color: #777777;
+      }
       #menu a {
         color: #777777;
       }
-      .heading {
-        color: rgb(71, 92, 255);
-        font-weight: 600;
-        font-size: 65px;
+      .carousel-caption h1 {
+        font-size: 4vw;
+      }
+      ..section-space {
+        margin: 3rem 0 60px 0;
       }
     </style>
   </head>
@@ -56,7 +61,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul id="menu" class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <ul id="menu" class="navbar-nav gap-4 mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"
                     >Home</a
@@ -88,8 +93,8 @@
         </nav>
       </div>
     </header>
-    <!-- banner section  -->
-    <section>
+    <!-- slider section start -->
+    <section id="top" class="my-4">
       <div class="container">
         <div
           id="carouselExampleCaptions"
@@ -97,23 +102,37 @@
           data-bs-ride="false"
         >
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <!-- slidder section start -->
+            <div class="carousel-item bg-dark rounded-2 active">
               <img
-                src="images/cover/cover-3.jpg"
-                class="d-block w-100"
+                src="images/cover/cover-1.png"
+                class="img-fluid d-block w-100 opacity-50"
                 alt="..."
               />
-              <div class="carousel-caption d-none sm-pt5 d-md-block">
-                <h1 class="heading mb-5">
-                  Get Started Digital <br />
-                  Learning
-                </h1>
-                <p class="text-black-50">
+              <div class="carousel-caption d-md-block">
+                <h1 class="fw-semibold">Get Started Digital Learning</h1>
+                <p class="text-truncate">
                   It is a long established fact that a reader will be distracted
-                  by the readable <br />
-                  content of a page when looking at its layout.
+                  by the readable content of a page when looking at its layout.
                 </p>
-                <button type="button" class="btn btn-primary text-light my-3">
+                <button type="button" class="btn btn-primary text-white">
+                  Get Started
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item active bg-dark rounded-2 active">
+              <img
+                src="images/cover/cover-3.jpg"
+                class="d-block w-100 opacity-50"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block px-5">
+                <h1 class="fw-semibold">Get Started Digital Learning</h1>
+                <p class="text-truncate">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <button type="button" class="btn btn-primary text-white">
                   Get Started
                 </button>
               </div>
@@ -140,7 +159,400 @@
         </div>
       </div>
     </section>
-    <!-- Discover section  -->
+    <!-- slider section end -->
+
+    <main>
+      <!-- card section start  -->
+      <section id="courses" class="section-space">
+        <div class="container">
+          <div class="section-heading text-center mt-5 mb-2 py-5">
+            <h1 class="fw-bold">
+              Discover Our Popular <br />
+              Courses
+            </h1>
+            <p class="w-75 mx-auto d-none d-md-block pt-2">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. Life is
+              beautiful and enjoy yourself.
+            </p>
+            <p class="mx-auto d-md-none pt-2">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. Life is
+              beautiful and enjoy yourself.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- for large Devices  -->
+      <section>
+        <div class="container">
+          <div class="course-card">
+            <div class="row row-cols-1 row-cols-lg-2 g-3 d-none d-md-flex">
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img
+                        src="images/course/course-1.png"
+                        class="img-fluid rounded-start h-100"
+                      />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7">
+                      <div class="card-body text-center text-md-start">
+                        <h5 class="card-title fw-semibold">
+                          Fundamental Of UI/UX Design
+                        </h5>
+                        <p class="card-text text-muted pt-2">
+                          The five main principles of UX design. There are many
+                          important principles within UX design.
+                        </p>
+                        <p class="text-primary fw-semibold">Price : 20$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img
+                        src="images/course/course-2.png"
+                        class="img-fluid rounded-start h-100"
+                      />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7">
+                      <div class="card-body text-center text-md-start">
+                        <h5 class="card-title fw-semibold">
+                          Javascript Basic to advanced
+                        </h5>
+                        <p class="card-text text-muted pt-2">
+                          A perfect JavaScript course for all those who want to
+                          learn and master JavaScript programming skills right
+                          from scratch.
+                        </p>
+                        <p class="text-primary fw-semibold">Price : 20$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img
+                        src="images/course/course-3.png"
+                        class="img-fluid rounded-start h-100"
+                      />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7">
+                      <div class="card-body text-center text-md-start">
+                        <h5 class="card-title fw-semibold">
+                          Fullstack Web Development
+                        </h5>
+                        <p class="card-text text-muted pt-2">
+                          Become a full stack web developer and learn to design
+                          and develop powerful modern web applications.
+                        </p>
+                        <p class="text-primary fw-semibold">Price : 20$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img
+                        src="images/course/course-4.png"
+                        class="img-fluid rounded-start h-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7">
+                      <div class="card-body text-center text-md-start">
+                        <h5 class="card-title fw-semibold">
+                          Digital Marketing
+                        </h5>
+                        <p class="card-text text-muted pt-2">
+                          Digital marketing, also called online marketing,
+                          refers to all marketing efforts that occur on the
+                          internet.
+                        </p>
+                        <p class="text-primary fw-semibold">Price : 20$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img
+                        src="images/course/course-5.png"
+                        class="img-fluid rounded-start h-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7">
+                      <div class="card-body text-center text-md-start">
+                        <h5 class="card-title fw-semibold">
+                          Photography Basic Rules
+                        </h5>
+                        <p class="card-text text-muted pt-2">
+                          Essential Composition Rules for New Photographers
+                        </p>
+                        <p class="text-primary fw-semibold">Price : 20$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img
+                        src="images/course/course-6.png"
+                        class="img-fluid rounded-start h-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7">
+                      <div class="card-body text-center text-md-start">
+                        <h5 class="card-title fw-semibold">Motion Graphics</h5>
+                        <p class="card-text text-muted pt-2">
+                          Motion graphics is animation, but with text as a major
+                          component. Essentially, it's animated graphic design.
+                        </p>
+                        <p class="text-primary fw-semibold">Price : 20$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- for mobile device  -->
+            <div class="row row-cols-1 row-cols-lg-2 g-4 d-md-none">
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img
+                        src="images/course/course-1.png"
+                        class="img-fluid rounded-start w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7">
+                      <div class="card-body text-center text-md-start">
+                        <h5 class="card-title fw-semibold">
+                          Fundamental Of UI/UX Design
+                        </h5>
+                        <p class="card-text text-muted pt-2">
+                          The five main principles of UX design. There are many
+                          important principles within UX design.
+                        </p>
+                        <p class="text-primary fw-semibold">Price : 20$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 g-4 d-md-none">
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img
+                        src="images/course/course-2.png"
+                        class="img-fluid rounded-start w-100"
+                      />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7">
+                      <div class="card-body text-center text-md-start">
+                        <h5 class="card-title fw-semibold">
+                          Javascript Basic to advanced
+                        </h5>
+                        <p class="card-text text-muted pt-2">
+                          A perfect JavaScript course for all those who want to
+                          learn and master JavaScript programming skills right
+                          from scratch.
+                        </p>
+                        <p class="text-primary fw-semibold">Price : 20$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 g-4 d-md-none">
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-4 col-lg-5">
+                      <img
+                        src="images/course/course-3.png"
+                        class="img-fluid rounded-start w-100"
+                      />
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-7">
+                      <div class="card-body text-center text-md-start">
+                        <h5 class="card-title fw-semibold">
+                          Fullstack Web Development
+                        </h5>
+                        <p class="card-text text-muted pt-2">
+                          Become a full stack web developer and learn to design
+                          and develop powerful modern web applications.
+                        </p>
+                        <p class="text-primary fw-semibold">Price : 20$</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-button text-center my-5">
+            <a
+              href="#top"
+              class="btn btn-lg btn-primary text-white fw-semibold rounded-2"
+              >Show more Courses</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ready to join -->
+      <section id="register" class="section-space">
+        <div class="container bg-primary rounded-2">
+          <div class="row align-items-center py-3 p-md-5">
+            <div class="col-12 col-lg-5 text-center text-lg-start text-white">
+              <h2 class="">Ready to join?</h2>
+              <p class="text-justify">
+                Ready to meet on WoW Code Meeting? To connect to an online
+                meeting, enter the WoW Code Meeting ID provided by the
+                organizer.
+              </p>
+            </div>
+            <div class="col-12 col-lg-4"></div>
+            <div class="col-12 col-lg-3 text-center">
+              <a
+                href="#"
+                class="btn btn-light btn-lg rounded-4 text-primary fw-semibold"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >Register Now</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- register modal start  -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <div class="register-form">
+                  <h2 class="text-center text-primary">Register Now</h2>
+                  <p class="text-center">offer is running!.Get 20% discount</p>
+                  <form action="" class="form">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Your Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="First name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Your Email</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Your email"
+                      />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"
+                        >+880</span
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Phone number"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Insert a Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="password should contain minimum 8 character"
+                      />
+                      <input
+                        type="password"
+                        class="form-control mt-3"
+                        id="exampleFormControlInput1"
+                        placeholder="Confirm your password"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="text-center mb-3">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Register me
+                </button>
+              </div>
+              <div class="text-center mb-3">
+                <a href="#" class="text-danger" data-bs-dismiss="modal">
+                  <small>I will register later</small>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- register modal End  -->
+      </section>
+      <!-- register section End -->
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
