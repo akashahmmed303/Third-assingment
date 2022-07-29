@@ -1,0 +1,25 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+#m {
+  color: #4a4a4a;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#menu {
+  color: #777777;
+}
+#menu a {
+  color: #777777;
+}
+.carousel-caption h1 {
+  font-size: 4vw;
+}
+.carousel-caption {
+  top: 35%;
+  bottom: auto;
+}
+.logo img {
+  width: 100px;
+}
